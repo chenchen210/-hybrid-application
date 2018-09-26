@@ -1,0 +1,17 @@
+<h3>正在进行 <span>{{arr1.length}}</span> </h3>   
+ <ul>
+    <li *ngFor="let item of arr1;let i=index;">
+        <input (click)="change1(i)" type="checkbox">
+        {{item}}
+        <button (click)="del1(i)">删除</button>
+
+    </li> 
+ </ul>
+<h3>已经完成 <span>{{arr2.length}}</span></h3>
+<ul>
+    <li *ngFor="let item of arr2;let i=index;">
+            <input (click)="change2(i)" type="checkbox" checked="checked">
+            {{item}} 
+            <button (click)="del2(i)">删除</button>
+    </li>
+</ul>
