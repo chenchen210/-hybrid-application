@@ -1,0 +1,48 @@
+<div id="container">
+  <h3>
+    同步课/{{course?.courseName}}
+    <span id="score"><span id="p1">0.00分</span>/<span id="p2">20分</span>/<span id="p3">20分</span></span>
+  </h3>
+  <ul class="list">
+      <li>简介</li>
+      <li>互动</li>
+      <li>任务{{course?.task}}</li>
+      <li>成员{{course?.person}}</li>
+  </ul>
+  <br>
+</div>
+<p id="content">
+  <button>全部任务</button>
+  <button>成绩分析</button>
+</p>
+<ul>
+  <li class="task">  
+    <!-- *ngFor="let item of courses"  -->
+    <h4>{{courses.courseName}}</h4>
+    <span class="one"><img src="{{courses.images}}" ></span>
+    <span class="two">{{courses.pName}}</span>
+    <span class="three">发布于 {{courses.time}}</span>
+    <span class="four">{{courses.taskdone}}</span>
+    <span class="five">{{courses.tasking}}</span>
+    <span class="six">{{courses.untask}}</span>
+  </li>
+</ul>
+<!-- <div id="task">
+</div> -->
+
+
+
+  <!-- <input type="radio" (change)="change($event)" value="1" name="num">1111
+  <input type="radio" (change)="change($event)" value="2" name="num">2222
+  <input type="radio" (change)="change($event)" value="3" name="num">3333
+
+<div [ngSwitch]="num">
+  <div *ngSwitchCase="1">1</div>
+  
+  <div *ngSwitchCase="2">2</div>
+  
+  <div *ngSwitchCase="3">3</div>
+</div>
+
+<p>{{data|date:'y-MM-dd e'}}</p> -->
+<!-- {{'hhhhhh'|uppercase}} -->

@@ -1,0 +1,78 @@
+nav{
+    height: 50px;
+    background-color: #f7f7f7;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.nav{
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 50px;
+}
+.nav li{
+    float: left;
+    margin: 0 25px;
+    cursor: pointer;
+}
+#firsta{
+    margin-left: 180px;
+}
+#in-1{
+    height: 18px;
+}
+#in-2{
+    height: 23px;
+    width: 23px;
+}
+#notice{
+    width: 56px;
+    height: 50px;
+    margin-right: 0px;
+}
+#noticeli{
+    padding: 0px;
+    width: 140px;
+    height: 120px;
+    position: absolute;
+    left: 995px;
+    display:none;
+    z-index: 1000;
+}
+#noticeli li{
+    text-decoration: underline;
+    width: 135px;
+    height: 40px;
+    background: white;
+}
+#noticeli :hover{
+    background-color: orangered;
+    width: 110px;
+}
+#head{
+    width: 56px;
+    height: 50px;
+}
+#headli{
+    padding: 0px;
+    width: 135px;
+    height: 120px;
+    position: absolute;
+    left: 1103px;
+    margin-left: 0px;
+    display: none;
+    z-index: 1000;
+}
+#headli li{
+    text-decoration: underline;
+    width: 135px;
+    height: 40px;
+    background: white;
+}
+#headli :hover{
+    background-color: orangered;
+    width: 110px;
+}

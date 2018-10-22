@@ -1,0 +1,78 @@
+#content{
+    width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+}
+#title{
+    width: 800px;
+    height: 25px;
+    margin-left: 100px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    color: lightsalmon;
+}
+#last{
+    color: lightgrey
+}
+#infor{
+    width: 800px;
+    height: 25px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+#meau{
+    width: 800px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 10px;
+    background-color: black;
+}
+#vedio{
+    float: left;
+    width: 575px;
+    height: 300px;
+}
+#vedio video{
+    width: 100%;
+    height: 100%;
+}
+#meaulist{
+    float: right;
+    width: 220px;
+    height: 300px;
+}
+ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: lightgray;
+}
+#bottom{
+    width: 800px;
+    height: 400px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+#left{
+    float: left;
+    width: 490px;
+    height: 400px;
+}
+#left-top{
+    width: 490px;
+    height: 140px;
+    border: 1px lightgrey solid;
+    padding: 10px;
+}
+#left-bottom{
+    width: 510px;
+    height: 150px;
+    border: 1px lightgrey solid;
+}
+#right{
+    float: right;
+    width: 280px;
+    height: 380px;
+    border: 1px lightgrey solid;
+}

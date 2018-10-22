@@ -1,0 +1,31 @@
+<div id="right">
+    <div id="right-top">
+        <span id="one">我加入的</span>
+        <span id="two">
+          <input type="text" id="inp" placeholder="输入同步课名搜索">
+          <button id="in-2"><i class="icon ion-search"></i></button>
+        </span>
+      </div>
+      <div id="right-bottom">
+        <ul>
+          <li class="content" *ngFor="let item of courses">
+            <!-- <div id="content"> -->
+              <span id="conleft">
+                <img src="{{item.images}}">
+              </span>
+              <span id="concenter">
+                <p>{{item.courseName}}</p>
+                <p id="p">
+                  <i class="icon ion-ios-list-outline"></i>{{item.task}}
+                  <i class="icon ion-ios-people-outline"></i>{{item.person}}
+                </p>
+              </span>
+              <span id="conright">
+                <img src="../../../assets/images/score.png" alt="">
+              </span>
+            <!-- </div> -->
+          </li>
+        </ul>
+      </div>
+</div>
+

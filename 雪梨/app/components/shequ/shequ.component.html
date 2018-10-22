@@ -1,0 +1,52 @@
+<div id="left">
+  <ul>
+    <li *ngFor="let obj of course; let i=index">
+      <div id="left-l">
+        <div class="left-li">
+          <div class="header">
+            <img src="{{obj.headimg}}">
+          </div>
+          <div class="conternt">
+            <div class="content-top">
+              <a [routerLink]="['/shequ',obj.id]">
+                <div class="images">
+                  <a><img src="{{obj.txtimg}}"></a>
+                </div>
+                <div class="acticle">
+                  <a href="#">&nbsp;{{obj.conttop}}</a>
+                  <p>{{obj.contbottom}}</p>
+                </div>
+              </a>
+            </div>
+            <div class="content-bottom">
+              <span class="c-left">{{obj.bottoml}}</span><span class="c-center">{{obj.bottomc}}</span><span class="c-right">{{obj.bottomr}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div id="right">
+  <div id="right-top">热门话题</div>
+  <div id="right-bottom">
+    <ul>
+      <li>
+        <span class="one"><a>#2015级程序设计基...#</a></span>
+        <span class="two">6万</span></li>
+      <li>
+        <span class="one"><a>#2015级面向对象程...#</a></span>
+        <span class="two">3万</span>
+      </li>
+      <li>
+        <span class="one"><a>#css模板与制作#</a></span>
+        <span class="two">3万</span>
+      </li>
+      <li>
+        <span class="one"><a>#数据结构#</a></span>
+        <span class="two">2万</span>
+      </li>
+    </ul>
+  </div>
+</div>

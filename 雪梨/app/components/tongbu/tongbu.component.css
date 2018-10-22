@@ -1,0 +1,23 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.container li{
+    list-style: none;
+    width: 260px;
+    float: left;
+    margin-right: 2px;
+    padding: 3px;
+    border: 1px gainsboro solid;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.bottom button{
+    float:right;
+}
+.bottom span{
+    padding-right: 40px;
+    text-align: left;
+}

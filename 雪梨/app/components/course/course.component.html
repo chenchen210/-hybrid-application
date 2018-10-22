@@ -1,0 +1,29 @@
+<div id="top">
+  <form>
+      <select id="one">
+        <option value="">课程分类</option>
+        <option value="saab">一级分类</option>
+        <option value="fiat">WEB前端开发</option>
+      </select>
+      <select id="two">
+        <option value="">课程体系</option>
+        <option value="saab">计算机基础技能</option>
+        <option value="fiat">Web前端工程师</option>
+      </select>
+  </form>
+</div>
+<div id="conter">
+    <ul>
+        <li *ngFor="let course of courses; let i=index">
+          <a [routerLink]="['/course',course.id]">
+            <div id="img"><img src="{{course.images}}"></div>
+            <div id="coursename">{{course.courseName}}</div>
+            <div id="txt">{{course.text}}</div>
+            <div class="bottom">
+              <span id="bottom-1">课时 {{course.time}}</span>        
+              <span id="bottom-2">人数 {{course.person}}</span>     
+            </div>
+        </a>
+        </li>
+      </ul>
+</div>

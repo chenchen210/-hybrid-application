@@ -1,0 +1,32 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+#left{
+    position:absolute;
+    left: 130px;
+    width: 160px;
+}
+#left-top{
+    height: 280px;
+    /* border-bottom: 1px gray solid; */
+    text-align: center;
+    padding: 2px;
+}
+#left-bottom{
+    padding: 4px;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    cursor: pointer;
+}
+#first{
+    color: orangered;
+}
+#left-bottom li :hover{
+    color: orangered;
+}
+#left-bottom li :visited{
+    color: orangered;
+}

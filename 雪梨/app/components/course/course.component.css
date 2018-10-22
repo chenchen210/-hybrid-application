@@ -1,0 +1,59 @@
+a{
+    text-decoration: none;
+}
+#top{
+    width: 1200px;
+    margin: 10 auto;
+    /* border: 1px gray solid; */
+    padding-top: 10px;
+    padding-left: 115px;
+}
+#conter{
+    width: 1200px;
+    margin: 0 auto;
+    /* border: 1px gray solid; */
+
+}
+#conter div{
+    margin: 5px;
+}
+#img{
+    height: 130px;
+    width: 260px;
+    overflow: hidden;
+}
+#conter li{
+    list-style: none;
+    width: 260px;
+    float: left;
+    margin-right: 2px;
+    padding: 5px;
+    border: 1px gainsboro solid;
+    text-align: left;
+}
+#coursename{
+    height: 20px;
+    width: 260px;
+    line-height: 20px;
+    color: black;
+    overflow: hidden;
+}
+#txt{
+    height: 100px;
+    width: 260px;
+    overflow: hidden;
+    text-align: left;
+    line-height: 20px;
+    color: lightgrey;
+}
+#bottom{
+    padding: 3px 3px;
+}
+#bottom-1{
+    float: left;
+    color: lightgrey;
+}
+#bottom-2{
+    float: right;
+    color: lightgrey;
+}
