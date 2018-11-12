@@ -1,0 +1,142 @@
+<ion-header no-border text-center>
+  <ion-navbar color='yel'>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title ></ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+  <ul class="ullist">
+    <li (click)="change1($event)" [ngClass]="{'borbot':a == true}">推荐</li>
+    <li (click)="change2($event)" [ngClass]="{'borbot':b == true}">家居</li>
+    <li (click)="change3($event)" [ngClass]="{'borbot':c == true}">餐厨</li>
+    <li (click)="change4($event)" [ngClass]="{'borbot':d == true}">床上用品</li>
+  </ul>
+  <ion-slides  pager="true" autoplay="1000" loop="true" class="sli">
+    <ion-slide>
+      <img src="../../assets/imgs/1首页_02.png">
+    </ion-slide>
+    <ion-slide>
+      <img src="../../assets/imgs/2家居页_02.png">
+    </ion-slide>
+  </ion-slides>
+  <div [ngSwitch]="number">
+    <div *ngSwitchDefault>
+      <div class="subtitle" >
+        <h3 text-center>热|门|推|荐</h3>
+        <p text-center>RECOMMENDATION</p>
+      </div>
+      <ul class="goods">
+        <li>
+          <img src="../../assets/imgs/page-1.png">
+          <p>——北欧原木色——</p>
+          <span><ion-icon name="md-star-half"></ion-icon></span>
+        </li>
+        <li>
+          <img src="../../assets/imgs/page-2.png">
+          <p>——简约黑檀木茶几——</p>
+          <span><ion-icon name="md-star-half"></ion-icon></span>
+        </li>
+        <li>
+          <img src="../../assets/imgs/page-3.png">
+          <p>——北欧白橡木书架——</p>
+          <span><ion-icon name="md-star-half"></ion-icon></span>
+        </li>
+        <li>
+          <img src="../../assets/imgs/page-4.png">
+          <p>——北欧风餐边柜——</p>
+          <span><ion-icon name="md-star-half"></ion-icon></span>
+        </li>
+        <li>
+          <img src="../../assets/imgs/page-5.png">
+          <p>——北欧原木色——</p>
+          <span><ion-icon name="md-star-half"></ion-icon></span>
+        </li>
+        <li>
+          <img src="../../assets/imgs/page-6.png">
+          <p>——北欧原木色——</p>
+          <span><ion-icon name="md-star-half"></ion-icon></span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="div1" *ngSwitchCase="2">
+      <span>
+        <img src="../../assets/imgs/2家居页_05.png">
+        <h3>家居</h3>
+      </span>
+      <span>
+        <img src="../../assets/imgs/2家居页_10.png">
+        <h3>书房</h3>
+      </span>
+      <span>
+        <img src="../../assets/imgs/2家居页_12.png">
+        <h3>门厅</h3>
+      </span>
+      <div>
+        <img src="../../assets/imgs/桔子家居-logo.png" alt="">
+      </div>
+      <ul class="list">
+        <li>
+          <img src="../../assets/imgs/2家居页-5_03.png">
+          <p>—欧式全实木花几— RMB 600</p>
+          <span><ion-icon name="md-star-half"></ion-icon></span>
+        </li>
+        <li>
+          <img src="../../assets/imgs/2家居页-5_05.png">
+          <p>—现代简约早餐桌— RMB 450</p>
+          <span><ion-icon name="md-star-half"></ion-icon></span>
+        </li>
+        <li>
+          <img src="../../assets/imgs/2家居页-5_05.png">
+          <p>—现代简约早餐桌— RMB 450</p>
+          <span><ion-icon name="md-star-half"></ion-icon></span>
+        </li>
+        <li>
+          <img src="../../assets/imgs/2家居页-5_03.png">
+          <p>—欧式全实木花几— RMB 600</p>
+          <span><ion-icon name="md-star-half"></ion-icon></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- <ion-segment [(ngModel)]="icons" color="secondary">
+    <ion-segment-button value="camera">
+      <ion-icon name="camera"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="bookmark">
+      <ion-icon name="bookmark"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+  <div [ngSwitch]="icons">
+    <div *ngSwitchCase="'camera'">这是camera</div>
+    <div *ngSwitchCase="'bookmark'">这是bookmark</div>
+  </div>
+
+  <button ion-button block (click)="goSub1()">注册</button>
+  
+  <a #ac></a>
+  <input type="text" #inp>
+  <button ion-button menu>开关菜单</button>
+  <button ion-button block (click)="goSub(inp.value)">跳转</button>
+
+  <ion-list>
+      <ion-item *ngFor="let item of items;" detail-push>{{item}}</ion-item>
+  </ion-list>
+
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll> -->
+  
+</ion-content>

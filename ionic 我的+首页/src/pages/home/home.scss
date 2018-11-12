@@ -1,0 +1,137 @@
+page-home {
+    ion-navbar{
+        height: 64px;
+    }
+    ion-title{
+        background-image: url(../../assets/imgs/page-logo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .borbot{
+        border-bottom: 4px #ffdb2c solid;
+    }
+    .ullist{
+        padding-left: 0;
+        margin: 0;
+        li{
+            display: inline-block;
+            width: 87px;
+            height: 43px;
+            line-height: 43px;
+            text-align: center;
+         }
+        // #one{ border-bottom: 4px #ffdb2c solid;}
+    } 
+    .sli{
+        height: auto;
+        img{
+            width: 100%;
+        }
+    }
+    .subtitle{
+        letter-spacing: 5px;
+    }
+    .goods{
+        padding: 0;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        li{
+            position: relative;
+            height: 110px;
+            width: 45%;
+            float: left;
+            margin: 5px 0 5px 3%;
+            span{
+                display: block;
+                width: 26px;
+                height: 26px;
+                text-align: center;
+                line-height: 26px;
+                border-radius: 50%;
+                color: red;
+                position: absolute;
+                background: #fff;
+                right: 15px;
+                bottom: 25px;
+            }
+            p{
+                position: absolute;
+                width: 100%;
+                bottom:4px;
+                margin: 0;
+                color: #fff;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                background-color:rgba(0,0,0,0.5);
+            }
+        }
+    }
+    .div1{
+        span{
+            position: relative;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 5px 12px 2px 12px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            h3{
+                position: absolute;
+                width: 100%;
+                bottom: 25px;
+                color: white;
+                padding-left: 28px;
+            }
+        }
+        div{
+            width: 80%;
+            height: 50px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .list{
+            padding-left: 0;
+            margin: 0;
+            li{
+                position: relative;
+                height: 130px;
+                width: 45%;
+                float: left;
+                margin: 10px 0 10px 3%;
+                span{
+                    display: block;
+                    width: 26px;
+                    height: 26px;
+                    text-align: center;
+                    line-height: 26px;
+                    border-radius: 50%;
+                    color: red;
+                    position: absolute;
+                    background: #fff;
+                    right: 15px;
+                    bottom: 25px;
+                }
+                p{
+                    position: absolute;
+                    width: 100%;
+                    bottom:-10px;
+                    margin: 0;
+                    font-size: 10px;
+                    color: #fff;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    background-color:rgba(0,0,0,0.5);
+                }
+            }
+        }
+    }
+}
